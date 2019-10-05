@@ -12,5 +12,10 @@ class TestClassFizzBuzz {
 	void input_is_expect_1() {
 		assertEquals(1, input);
 	}
+	
+	@Test
+	void input_is_expect_2() {
+		assertEquals(1, input);
+	}
 
 }
