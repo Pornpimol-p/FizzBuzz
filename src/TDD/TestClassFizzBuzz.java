@@ -11,6 +11,7 @@ class TestClassFizzBuzz {
 	String input3 = fizzBuzz.getNumber1(3);
 	String input4 = fizzBuzz.getNumber1(4);
 	String input5 = fizzBuzz.getNumber1(5);
+	String input6 = fizzBuzz.getNumber1(6);
 
 	@Test
 	void input1_is_expect_1() {
@@ -33,5 +34,6 @@ class TestClassFizzBuzz {
 	void input5_is_expect_Buzz() {
 		assertEquals("Buzz", input5);
 	}
-
+	void input6_is_expect_6() {
+		assertEquals("6", input6);
 }
