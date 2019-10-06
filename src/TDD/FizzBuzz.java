@@ -7,12 +7,16 @@ public class FizzBuzz {
 Scanner keyboardScanner = new Scanner(System.in);
 	
 	public String getNumber1(int number1) {
-		if(number1 % 3 == 0) {
+		if ((number1 % 3 == 0)&(number1 % 5 == 0)){
+			 return FizzBuzzPrint();
+		 }
+		else if(number1 % 3 == 0) {
 			 return Fizz();
-		 }else if(number1 % 5 == 0) {
+		 }
+		else if(number1 % 5 == 0) {
 			 return Buzz();
 		 }
-		 else {
+		else {
 			 return Integer.toString(number1);
 		 }
 		
@@ -24,6 +28,10 @@ Scanner keyboardScanner = new Scanner(System.in);
 	
 	public String Buzz() {
 		return "Buzz";
+	}
+	
+	public String FizzBuzzPrint() {
+		return "FizzBuzz";
 	}
 	
 }
