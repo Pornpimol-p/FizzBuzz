@@ -4,15 +4,20 @@ import java.util.Scanner;
 
 public class FizzBuzz {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner keyboard = new Scanner(System.in);
-		int input = keyboard.nextInt();
-		System.out.println(input);
-
+Scanner keyboardScanner = new Scanner(System.in);
+	
+	public String getNumber1(int number1) {
+		if(number1 % 3 == 0) {
+			 return Fizz();
+		 }
+		 else {
+			 return Integer.toString(number1);
+		 }
+		
 	}
-	public static int getInt(int kb) {
-		return kb;
+	
+	public String Fizz() {
+		return "Fizz";
 	}
-
+	
 }
